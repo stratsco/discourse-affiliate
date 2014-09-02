@@ -43,6 +43,7 @@ addTagToEnd = function (url) {
         }
         return url;
     }
+    return url;
 };
 
 Discourse.Dialect.on("parseNode", function(event) {
