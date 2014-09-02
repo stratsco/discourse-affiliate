@@ -14,7 +14,7 @@ universalCode = {
 addTagToEnd = function (url) {
     var link, match, match2, tag, domain;
     domain = url.split("/")[2];
-    if (!domain)  { return; }
+    if (!domain)  { return url; }
     for (link in universalCode) {
         tag = universalCode[link];
         if (!(domain === link || domain.substring(domain.length - link.length - 1) === '.' + link)) {
@@ -24,7 +24,7 @@ addTagToEnd = function (url) {
             return url; //no change
         }
         match = tag.match(/([a-zA-Z0-9\-]+)=([a-zA-Z0-9\-]+)/);
-        if (!match[2]) { //if tag is not configured
+        if (!match) { //if tag is not configured
             return url; //no change
         }
         match2 = new RegExp(match[1] + '=([a-zA-Z0-9\-]+)');
