@@ -1,7 +1,7 @@
 var addTagToEnd, universalCode;
 universalCode = {
     'amazon.co.uk': 'tag=',
-    'amazon.com': 'tag=',
+    'amazon.com': 'tag=pragmatentrep-20',
     'amazon.de': 'tag=',
     'amazon.fr': 'tag=pragmaticentrepreneurs-21',
     'javari.co.uk': 'tag=',
