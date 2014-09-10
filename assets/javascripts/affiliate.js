@@ -1,15 +1,7 @@
 var addTagToEnd, universalCode;
 universalCode = {
-    'amazon.co.uk': 'tag=',
-    'amazon.com': 'tag=pragmatentrep-20',
-    'amazon.de': 'tag=',
-    'amazon.fr': 'tag=pragmaticentrepreneurs-21',
-    'javari.co.uk': 'tag=',
-    'javari.de': 'tag=',
-    'javari.fr': 'tag=pragmaticentrepreneurs-21',
-    'amazonsupply.com': 'tag=',
-    'amazonwireless.com': 'tag=',
-    'endless.com': 'tag='
+    'amazon.co.uk': 'tag=stratsco-20',
+    'amazon.com': 'tag=stratsco-20'
 };
 addTagToEnd = function (url) {
     var link, match, match2, tag, domain;
