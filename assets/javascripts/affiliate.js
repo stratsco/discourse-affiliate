@@ -1,7 +1,8 @@
 var addTagToEnd, universalCode;
 universalCode = {
     'amazon.co.uk': 'tag=stratsco-20',
-    'amazon.com': 'tag=stratsco-20'
+    'amazon.com': 'tag=stratsco-20',
+    'digitalocean.com': 'refcode=fcbf587ed436'
 };
 addTagToEnd = function (url) {
     var link, match, match2, tag, domain;
