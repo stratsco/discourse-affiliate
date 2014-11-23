@@ -27,9 +27,12 @@ addTagToEnd = function (url) {
         if (!match) { //if tag is not configured
             return url; //no change
         }
-        match2 = new RegExp(match[1] + '=([a-zA-Z0-9\-]+)');
-        if (url.search(match2) > -1) {
-            url = url.replace(match2, match[1] + '=' + match[2]);
+        match2 = new RegExp(match[1] + '=([a-zA-Z0-9\-]*)');
+        if (url.search(match2) > -1) { // if the url already contains a tag                                     
+            match3 = url.match(match2);
+            if (!match3[1]) { // if the tag value is empty                                                      
+                url = url.replace(match2, match[1] + '=' + match[2]); // replace it by our value                
+            }
             return url;
         }
         if (url.substring(url.length, url.length - 1) === '/') {
