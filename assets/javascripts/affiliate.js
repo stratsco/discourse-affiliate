@@ -10,7 +10,8 @@
     'javari.fr': 'tag=pragmaticentrepreneurs-21',
     'amazonsupply.com': 'tag=',
     'amazonwireless.com': 'tag=',
-    'endless.com': 'tag='
+    'endless.com': 'tag=',
+    'digitalocean.com': 'refcode=fdc7761ea776'
   };
 
   var addTagToEnd = function (url) {
