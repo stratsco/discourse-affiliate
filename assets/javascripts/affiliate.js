@@ -4,7 +4,8 @@
     'amazon.co.uk': 'tag=stratsco-20',
     'amazon.com': 'tag=stratsco-20',
     'digitalocean.com': 'refcode=fcbf587ed436',
-    'albiononline.com': 'ref=G4WMSTNNK9'
+    'albiononline.com': 'ref=G4WMSTNNK9',
+    'gameshow.net': 'AFFILIATE=78843'
   };
 
   var addTagToEnd = function (url) {
